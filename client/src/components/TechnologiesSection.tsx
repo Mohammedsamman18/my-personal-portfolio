@@ -3,14 +3,14 @@ export default function TechnologiesSection() {
     { name: "React", category: "Frontend" },
     { name: "JavaScript", category: "Language" },
     { name: "TypeScript", category: "Language" },
-    { name: "Tailwind CSS", category: "Styling" },
+    { name: "Tailwind CSS", category: "Styling" },
     { name: "PostgreSQL", category: "Database" },
     { name: "MySQL", category: "Database" },
     { name: "Git", category: "Tools" },
     { name: "Jira", category: "Tools" },
     { name: "Docker", category: "DevOps" },
     { name: "AWS", category: "Cloud" },
-    { name: "REST API", category: "API" },
+    { name: "REST API", category: "API" },
     { name: "FastAPI", category: "API" },
     { name: "Python", category: "Language" },
     { name: "Django", category: "Framework" },
@@ -30,25 +30,20 @@ export default function TechnologiesSection() {
   };
 
   return (
-    <section id="technologies" className="py-20 bg-card/30">
-      <div className="container">
-        <h2 className="text-3xl md:text-4xl font-poppins font-bold text-foreground mb-12 text-center">
-          Technologies & Tools
+    <section id="technologies" className="py-16 sm:py-20 bg-card/30">
+      <div className="container px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-poppins font-bold text-foreground mb-10 text-center">
+          Technologies & Tools
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
           {technologies.map((tech, idx) => {
             const gradient = categoryColors[tech.category] || "from-gray-500 to-gray-600";
             return (
-              <div
-                key={idx}
-                className="group relative"
-              >
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${gradient} rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur`}
-                ></div>
-                <div className="tech-badge text-center relative">
-                  <div className="font-poppins font-semibold text-foreground">{tech.name}</div>
+              <div key={idx} className="group relative">
+                <div className={`absolute inset-0 bg-gradient-to-br ${gradient} rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur`}></div>
+                <div className="tech-badge text-center relative py-3 px-2">
+                  <div className="font-poppins font-semibold text-foreground text-xs sm:text-sm">{tech.name}</div>
                   <div className="text-xs text-muted-foreground font-inter mt-1">{tech.category}</div>
                 </div>
               </div>
@@ -56,24 +51,16 @@ export default function TechnologiesSection() {
           })}
         </div>
 
-        {/* Skills Overview */}
-        <div className="mt-16 grid md:grid-cols-2 gap-8">
-          {/* Years of experience */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="card-hover text-center">
-            <div className="text-4xl font-poppins font-bold text-primary mb-2">2+</div>
-            <p className="text-foreground font-poppins font-semibold">Years of Experience</p>
-            <p className="text-muted-foreground text-sm font-inter mt-2">
-              2+ years in React and 1+ year in Django
-            </p>
+            <div className="text-3xl sm:text-4xl font-poppins font-bold text-primary mb-2">2+</div>
+            <p className="text-foreground font-poppins font-semibold">Years of Experience</p>
+            <p className="text-muted-foreground text-sm font-inter mt-2">2+ years in React and 1+ year in Django</p>
           </div>
-
-          {/* Projects completed */}
           <div className="card-hover text-center">
-            <div className="text-4xl font-poppins font-bold text-primary mb-2">9+</div>
-            <p className="text-foreground font-poppins font-semibold">Projects Completed</p>
-            <p className="text-muted-foreground text-sm font-inter mt-2">
-              7+ React projects and 2+ Django projects
-            </p>
+            <div className="text-3xl sm:text-4xl font-poppins font-bold text-primary mb-2">9+</div>
+            <p className="text-foreground font-poppins font-semibold">Projects Completed</p>
+            <p className="text-muted-foreground text-sm font-inter mt-2">7+ React projects and 2+ Django projects</p>
           </div>
         </div>
       </div>

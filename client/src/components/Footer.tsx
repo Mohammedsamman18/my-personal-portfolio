@@ -16,11 +16,17 @@ export default function Footer() {
             <span>MSS</span>
           </div>
           <div className="flex gap-4">
-            <a href="#home" className="text-muted-foreground hover:text-primary transition-colors font-inter text-sm">
+            <a
+              href="#home"
+              className="text-muted-foreground hover:text-primary transition-colors font-inter text-sm"
+            >
               Top
             </a>
             <span className="text-border">|</span>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-inter text-sm">
+            <a
+              href="#contact"
+              className="text-muted-foreground hover:text-primary transition-colors font-inter text-sm"
+            >
               Contact
             </a>
           </div>

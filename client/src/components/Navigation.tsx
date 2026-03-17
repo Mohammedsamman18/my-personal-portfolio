@@ -18,19 +18,19 @@ export default function Navigation() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-poppins font-bold">P</span>
+            <span className="text-primary-foreground font-poppins font-bold">
+              P
+            </span>
           </div>
-          <span className="text-foreground font-poppins font-bold hidden sm:inline">Portfolio</span>
+          <span className="text-foreground font-poppins font-bold hidden sm:inline">
+            Portfolio
+          </span>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="nav-link text-sm"
-            >
+          {navItems.map(item => (
+            <a key={item.href} href={item.href} className="nav-link text-sm">
               {item.label}
             </a>
           ))}
@@ -53,7 +53,7 @@ export default function Navigation() {
       {isOpen && (
         <div className="md:hidden border-t border-border bg-card">
           <div className="container py-4 flex flex-col gap-3">
-            {navItems.map((item) => (
+            {navItems.map(item => (
               <a
                 key={item.href}
                 href={item.href}

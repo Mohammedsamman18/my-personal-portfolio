@@ -6,7 +6,8 @@ export default function EducationSection() {
       title: "Bachelor of Informatics Engineering (AI)",
       institution: "Private University of Sham (ASPU)",
       year: "2022 – 2026",
-      description: "Major in Informatics Engineering with a focus on Artificial Intelligence.",
+      description:
+        "Major in Informatics Engineering with a focus on Artificial Intelligence.",
     },
   ];
 
@@ -28,9 +29,15 @@ export default function EducationSection() {
                 <h4 className="text-base sm:text-lg font-poppins font-semibold text-foreground mb-2">
                   {edu.title}
                 </h4>
-                <p className="text-primary font-inter font-medium mb-2 text-sm sm:text-base">{edu.institution}</p>
-                <p className="text-muted-foreground text-sm font-inter mb-3">{edu.year}</p>
-                <p className="text-muted-foreground font-inter text-sm sm:text-base">{edu.description}</p>
+                <p className="text-primary font-inter font-medium mb-2 text-sm sm:text-base">
+                  {edu.institution}
+                </p>
+                <p className="text-muted-foreground text-sm font-inter mb-3">
+                  {edu.year}
+                </p>
+                <p className="text-muted-foreground font-inter text-sm sm:text-base">
+                  {edu.description}
+                </p>
               </div>
             ))}
           </div>

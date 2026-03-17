@@ -11,9 +11,11 @@ export default function ContactSection() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
+    setFormData(prev => ({
       ...prev,
       [name]: value,
     }));
@@ -81,7 +83,9 @@ export default function ContactSection() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-foreground font-inter font-medium mb-2">Name</label>
+                <label className="block text-foreground font-inter font-medium mb-2">
+                  Name
+                </label>
                 <input
                   type="text"
                   name="name"
@@ -94,7 +98,9 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-foreground font-inter font-medium mb-2">Email</label>
+                <label className="block text-foreground font-inter font-medium mb-2">
+                  Email
+                </label>
                 <input
                   type="email"
                   name="email"
@@ -107,7 +113,9 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-foreground font-inter font-medium mb-2">Message</label>
+                <label className="block text-foreground font-inter font-medium mb-2">
+                  Message
+                </label>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -132,30 +140,49 @@ export default function ContactSection() {
 
             <div className="space-y-4 mb-8">
               <div className="card-hover">
-                <p className="text-foreground font-inter font-medium mb-2">Email</p>
-                <a href="mailto:mohammedsalehsamman@gmail.com" className="text-primary hover:underline font-inter">
+                <p className="text-foreground font-inter font-medium mb-2">
+                  Email
+                </p>
+                <a
+                  href="mailto:mohammedsalehsamman@gmail.com"
+                  className="text-primary hover:underline font-inter"
+                >
                   mohammedsalehsamman@gmail.com
                 </a>
               </div>
 
               <div className="card-hover">
-                <p className="text-foreground font-inter font-medium mb-2">Availability</p>
-                <p className="text-muted-foreground font-inter">Available for freelance or full‑time opportunities</p>
+                <p className="text-foreground font-inter font-medium mb-2">
+                  Availability
+                </p>
+                <p className="text-muted-foreground font-inter">
+                  Available for freelance or full‑time opportunities
+                </p>
               </div>
 
               <div className="card-hover">
-                <p className="text-foreground font-inter font-medium mb-2">Location</p>
-                <p className="text-muted-foreground font-inter">Damascus, Syria</p>
+                <p className="text-foreground font-inter font-medium mb-2">
+                  Location
+                </p>
+                <p className="text-muted-foreground font-inter">
+                  Damascus, Syria
+                </p>
               </div>
 
               <div className="card-hover">
-                <p className="text-foreground font-inter font-medium mb-2">Response time</p>
-                <p className="text-muted-foreground font-inter">I will respond within 24 hours</p>
+                <p className="text-foreground font-inter font-medium mb-2">
+                  Response time
+                </p>
+                <p className="text-muted-foreground font-inter">
+                  I will respond within 24 hours
+                </p>
               </div>
             </div>
 
             <div>
-              <p className="text-foreground font-poppins font-semibold mb-4">Follow me on social media</p>
+              <p className="text-foreground font-poppins font-semibold mb-4">
+                Follow me on social media
+              </p>
               <div className="flex gap-4">
                 {socialLinks.map((social, idx) => {
                   const Icon = social.icon;

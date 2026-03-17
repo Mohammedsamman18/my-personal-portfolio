@@ -6,7 +6,8 @@ export default function HeroSection() {
       id="home"
       className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden"
       style={{
-        backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663274859105/fPorkgXGZqGmVjukeueJKS/hero-bg-EZpchBFxUmMgmGj2rtbqRS.webp')",
+        backgroundImage:
+          "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663274859105/fPorkgXGZqGmVjukeueJKS/hero-bg-EZpchBFxUmMgmGj2rtbqRS.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -16,7 +17,11 @@ export default function HeroSection() {
         <div className="mb-6 animate-fade-in">
           <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full border-2 border-primary bg-card/50 backdrop-blur-sm flex items-center justify-center mx-auto mb-4">
             <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-primary to-primary/50 flex items-center justify-center">
-              <img src="/avatar.png" alt="Mohammed Saleh" className="w-full h-full rounded-full object-cover" />
+              <img
+                src="/avatar.png"
+                alt="Mohammed Saleh"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -27,8 +32,13 @@ export default function HeroSection() {
           Crafting intelligent full-stack web applications
         </p>
         <div className="flex flex-col sm:flex-row gap-3 mb-12 animate-fade-in w-full sm:w-auto">
-          <a href="#about" className="cta-button text-center">Learn more about me</a>
-          <a href="#contact" className="px-6 py-3 rounded-lg border-2 border-primary text-primary font-poppins font-semibold hover:bg-primary/10 transition-all duration-300 text-center">
+          <a href="#about" className="cta-button text-center">
+            Learn more about me
+          </a>
+          <a
+            href="#contact"
+            className="px-6 py-3 rounded-lg border-2 border-primary text-primary font-poppins font-semibold hover:bg-primary/10 transition-all duration-300 text-center"
+          >
             Contact me
           </a>
         </div>
